@@ -269,7 +269,7 @@ article {
 
 .background-desktop {
   width: max-content;
-  left: 20%;
+  left: 40rem;
   top: -300px;
 }
 @media screen and (max-width: 1370px) {
