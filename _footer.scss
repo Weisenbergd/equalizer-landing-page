@@ -1,0 +1,50 @@
+@import "./variables";
+
+.footer {
+  margin-top: $margin-top-footer-desktop;
+  display: flex;
+  gap: 8.5rem;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+    margin-top: $margin-top-footer-tablet;
+    gap: 2rem;
+  }
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    margin-top: $margin-top-footer-icons-mobile;
+  }
+
+  &__image {
+    width: max-content;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    &--content {
+      max-width: 23rem;
+      font-size: $font-footer-all;
+      line-height: $line-footer-all;
+      letter-spacing: $spacing-footer-all;
+    }
+
+    &--icons {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+
+      @media screen and (max-width: $breakpoint-mobile) {
+        justify-content: flex-start;
+      }
+    }
+  }
+}

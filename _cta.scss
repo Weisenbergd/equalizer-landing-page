@@ -1,0 +1,154 @@
+@import "./variables";
+
+article {
+  z-index: 1;
+  margin-top: $margin-top-article-dekstop;
+  position: relative;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    margin-top: $margin-top-article-tablet;
+  }
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    margin-top: $margin-top-article-mobile;
+  }
+}
+
+.cta {
+  @media screen and (max-width: $breakpoint-mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__background {
+    height: $cta-desktop-tablet-height;
+    background-color: $color-black;
+    position: relative;
+    z-index: -2;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      margin: 0rem -1.5rem;
+    }
+
+    &--pattern {
+      position: absolute;
+      left: 336px;
+      bottom: 172px;
+      z-index: -1;
+      width: 312px;
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        left: 210px;
+        bottom: 172px;
+        width: 280px;
+      }
+
+      @media screen and (max-width: $breakpoint-mobile) {
+        position: absolute;
+        transform: translatex(-50%);
+        left: 50%;
+        bottom: initial;
+      }
+    }
+
+    &--phone {
+      position: absolute;
+      left: 102px;
+      bottom: 171px;
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        left: 64px;
+        bottom: 182px;
+      }
+
+      @media screen and (max-width: $breakpoint-mobile) {
+        position: absolute;
+        right: initial;
+        left: 50%;
+        transform: translatex(-50%);
+        top: -98px;
+      }
+
+      & img {
+        width: 312px;
+        z-index: 99;
+
+        @media screen and (max-width: $breakpoint-tablet) {
+          width: 270px;
+        }
+
+        @media screen and (max-width: $breakpoint-mobile) {
+          width: 209px;
+        }
+      }
+    }
+  }
+
+  &__content {
+    background-color: $color-orange-dark;
+    position: absolute;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    padding: 3.625rem 3.74rem;
+    gap: 1rem;
+    width: 27.9rem;
+    right: 95px;
+    top: 90px;
+    z-index: 99;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      padding: 3rem;
+      width: 25rem;
+    }
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      position: initial;
+      padding: 3rem 2.25rem;
+      width: auto;
+      margin: -13.5rem -1.5rem 0rem;
+    }
+
+    &--heading {
+      font-size: $font-h2-desktop;
+      letter-spacing: $spacing-h2-all;
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        font-size: $font-h2-tablet-mobile;
+      }
+    }
+
+    &--price {
+      .big {
+        font-size: 4rem;
+      }
+
+      .small {
+        font-size: 1.25rem;
+      }
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 1rem 0;
+    }
+
+    &--ios {
+      background-color: $color-black;
+      width: 100%;
+    }
+
+    &--android {
+      background-color: $color-white;
+      color: $color-black;
+      width: 100%;
+
+      & img {
+        display: inline;
+      }
+    }
+  }
+}

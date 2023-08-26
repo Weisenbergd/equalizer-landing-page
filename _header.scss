@@ -1,0 +1,46 @@
+@import "./variables";
+
+.header {
+  margin-top: $margin-top-heading-desktop;
+  max-width: 900px;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    margin-top: $margin-top-heading-tablet;
+    max-width: 600px;
+  }
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    margin-top: $margin-top-heading-mobile;
+  }
+
+  &__title {
+    font-size: $font-heading-desktop;
+    line-height: $line-heading-desktop;
+    letter-spacing: $spacing-heading-desktop;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: $font-heading-tablet;
+      line-height: $line-heading-tablet;
+      letter-spacing: $spacing-heading-tablet;
+    }
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      font-size: $font-heading-mobile;
+      line-height: $line-heading-mobile;
+      letter-spacing: $spacing-heading-mobile;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 40px;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-top: 28px;
+      max-width: 500px;
+    }
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      margin-top: 20px;
+    }
+  }
+}

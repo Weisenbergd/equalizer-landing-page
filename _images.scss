@@ -1,0 +1,52 @@
+@import "./variables";
+
+.images {
+  position: absolute;
+}
+
+.top-right {
+  right: 0;
+  top: 0;
+  width: 312px;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    width: 267px;
+  }
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    visibility: hidden;
+  }
+}
+
+.background-desktop {
+  left: 15%;
+  top: -20%;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    visibility: hidden;
+  }
+}
+
+.background-tablet {
+  visibility: hidden;
+  left: -300px;
+  top: -300px;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    visibility: visible;
+  }
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    visibility: hidden;
+  }
+}
+
+.background-mobile {
+  visibility: hidden;
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    visibility: visible;
+    top: -250px;
+    right: -200px;
+  }
+}

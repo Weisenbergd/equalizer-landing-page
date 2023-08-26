@@ -1,0 +1,65 @@
+$breakpoint-tablet: 1370px;
+$breakpoint-mobile: 800px;
+
+$color-blue: #66e2dc;
+$color-orange-dark: #fa7453;
+$color-orange-light: #ffb964;
+$color-white: #fcfaf9;
+$color-black: #191826;
+
+/////////Text
+//headers
+$font-heading-desktop: 5.5rem;
+$line-heading-desktop: 5.5rem;
+$spacing-heading-desktop: -1px;
+
+$font-heading-tablet: 4rem;
+$line-heading-tablet: 4rem;
+$spacing-heading-tablet: -0.73px;
+
+$font-heading-mobile: 2.5rem;
+$line-heading-mobile: 3rem;
+$spacing-heading-mobile: -0.45;
+
+$font-h2-desktop: 2.5rem;
+$font-h2-tablet-mobile: 2rem;
+
+$spacing-h2-all: 0px;
+
+//body
+$font-body-desktop: 1.25rem;
+$line-body-desktop: 2.125;
+$spacing-body-all: 0px;
+
+$font-body-tablet: 1.125rem;
+$line-body-tablet: 1.75rem;
+
+$font-body-mobile: 1rem;
+$line-body-mobile: 1.625rem;
+
+//footer
+$font-footer-all: 1rem;
+$line-footer-all: 1.6rem;
+$spacing-footer-all: 0px;
+
+//cta size
+$cta-desktop-tablet-height: 37.5rem;
+$cta-mobile-height: 23.8rem;
+
+///////////Padding
+$padding-body-desktop: 2rem 10.32rem 5.7rem 10.32rem;
+$padding-body-tablet: 2rem 2.4rem 5.3rem 2.4rem;
+$padding-body-mobile: 2rem 1.5rem 5rem 1.5rem;
+
+///////////Margin
+$margin-top-heading-desktop: 7.9rem;
+$margin-top-article-dekstop: 20rem;
+$margin-top-footer-desktop: 12.6rem;
+
+$margin-top-heading-tablet: 5.9rem;
+$margin-top-article-tablet: 15.6rem;
+$margin-top-footer-tablet: 11.4rem;
+
+$margin-top-heading-mobile: 4rem;
+$margin-top-article-mobile: 10.3rem;
+$margin-top-footer-icons-mobile: 4rem;

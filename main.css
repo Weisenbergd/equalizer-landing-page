@@ -1,0 +1,412 @@
+.header {
+  margin-top: 7.9rem;
+  max-width: 900px;
+}
+@media screen and (max-width: 1370px) {
+  .header {
+    margin-top: 5.9rem;
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header {
+    margin-top: 4rem;
+  }
+}
+.header__title {
+  font-size: 5.5rem;
+  line-height: 5.5rem;
+  letter-spacing: -1px;
+}
+@media screen and (max-width: 1370px) {
+  .header__title {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.73px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header__title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: -0.45;
+  }
+}
+.header__subtitle {
+  margin-top: 40px;
+}
+@media screen and (max-width: 1370px) {
+  .header__subtitle {
+    margin-top: 28px;
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header__subtitle {
+    margin-top: 20px;
+  }
+}
+
+article {
+  z-index: 1;
+  margin-top: 20rem;
+  position: relative;
+}
+@media screen and (max-width: 1370px) {
+  article {
+    margin-top: 15.6rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  article {
+    margin-top: 10.3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cta {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.cta__background {
+  height: 37.5rem;
+  background-color: #191826;
+  position: relative;
+  z-index: -2;
+}
+@media screen and (max-width: 800px) {
+  .cta__background {
+    margin: 0rem -1.5rem;
+  }
+}
+.cta__background--pattern {
+  position: absolute;
+  left: 336px;
+  bottom: 172px;
+  z-index: -1;
+  width: 312px;
+}
+@media screen and (max-width: 1370px) {
+  .cta__background--pattern {
+    left: 210px;
+    bottom: 172px;
+    width: 280px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .cta__background--pattern {
+    position: absolute;
+    transform: translatex(-50%);
+    left: 50%;
+    bottom: initial;
+  }
+}
+.cta__background--phone {
+  position: absolute;
+  left: 102px;
+  bottom: 171px;
+}
+@media screen and (max-width: 1370px) {
+  .cta__background--phone {
+    left: 64px;
+    bottom: 182px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .cta__background--phone {
+    position: absolute;
+    right: initial;
+    left: 50%;
+    transform: translatex(-50%);
+    top: -98px;
+  }
+}
+.cta__background--phone img {
+  width: 312px;
+  z-index: 99;
+}
+@media screen and (max-width: 1370px) {
+  .cta__background--phone img {
+    width: 270px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .cta__background--phone img {
+    width: 209px;
+  }
+}
+.cta__content {
+  background-color: #fa7453;
+  position: absolute;
+  color: #fcfaf9;
+  display: flex;
+  flex-direction: column;
+  padding: 3.625rem 3.74rem;
+  gap: 1rem;
+  width: 27.9rem;
+  right: 95px;
+  top: 90px;
+  z-index: 99;
+}
+@media screen and (max-width: 1370px) {
+  .cta__content {
+    padding: 3rem;
+    width: 25rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .cta__content {
+    position: initial;
+    padding: 3rem 2.25rem;
+    width: auto;
+    margin: -13.5rem -1.5rem 0rem;
+  }
+}
+.cta__content--heading {
+  font-size: 2.5rem;
+  letter-spacing: 0px;
+}
+@media screen and (max-width: 1370px) {
+  .cta__content--heading {
+    font-size: 2rem;
+  }
+}
+.cta__content--price .big {
+  font-size: 4rem;
+}
+.cta__content--price .small {
+  font-size: 1.25rem;
+}
+.cta__content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 0;
+}
+.cta__content--ios {
+  background-color: #191826;
+  width: 100%;
+}
+.cta__content--android {
+  background-color: #fcfaf9;
+  color: #191826;
+  width: 100%;
+}
+.cta__content--android img {
+  display: inline;
+}
+
+.footer {
+  margin-top: 12.6rem;
+  display: flex;
+  gap: 8.5rem;
+}
+@media screen and (max-width: 1370px) {
+  .footer {
+    flex-direction: column;
+    margin-top: 11.4rem;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer {
+    margin-top: 4rem;
+  }
+}
+.footer__image {
+  width: max-content;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+.footer__container--content {
+  max-width: 23rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0px;
+}
+.footer__container--icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .footer__container--icons {
+    justify-content: flex-start;
+  }
+}
+
+.images {
+  position: absolute;
+}
+
+.top-right {
+  right: 0;
+  top: 0;
+  width: 312px;
+}
+@media screen and (max-width: 1370px) {
+  .top-right {
+    width: 267px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .top-right {
+    visibility: hidden;
+  }
+}
+
+.background-desktop {
+  left: 15%;
+  top: -20%;
+}
+@media screen and (max-width: 1370px) {
+  .background-desktop {
+    visibility: hidden;
+  }
+}
+
+.background-tablet {
+  visibility: hidden;
+  left: -300px;
+  top: -300px;
+}
+@media screen and (max-width: 1370px) {
+  .background-tablet {
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 800px) {
+  .background-tablet {
+    visibility: hidden;
+  }
+}
+
+.background-mobile {
+  visibility: hidden;
+}
+@media screen and (max-width: 800px) {
+  .background-mobile {
+    visibility: visible;
+    top: -250px;
+    right: -200px;
+  }
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: 2rem 10.32rem 5.7rem 10.32rem;
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1370px) {
+  body {
+    padding: 2rem 2.4rem 5.3rem 2.4rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    padding: 2rem 1.5rem 5rem 1.5rem;
+  }
+}
+
+div,
+a {
+  border-radius: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 2.125;
+  letter-spacing: 0px;
+}
+@media screen and (max-width: 1370px) {
+  p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
+
+/*
+
+@media screen and (max-width: $breakpoint-tablet) {
+
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+
+}
+
+*//*# sourceMappingURL=main.css.map */

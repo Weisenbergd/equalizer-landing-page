@@ -1,0 +1,103 @@
+@import "./variables";
+@import "./nav";
+@import "./header";
+@import "./cta";
+@import "./footer";
+@import "./images";
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: $padding-body-desktop;
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding: $padding-body-tablet;
+  }
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    padding: $padding-body-mobile;
+  }
+}
+
+div,
+a {
+  border-radius: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: $font-body-desktop;
+  line-height: $line-body-desktop;
+  letter-spacing: $spacing-body-all;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    font-size: $font-body-tablet;
+    line-height: $line-body-tablet;
+  }
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    font-size: $font-body-mobile;
+    line-height: $line-body-mobile;
+  }
+}
+
+/*
+
+@media screen and (max-width: $breakpoint-tablet) {
+
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+
+}
+
+*/
