@@ -19,8 +19,9 @@
 }
 
 .background-desktop {
-  left: 15%;
-  top: -20%;
+  width: max-content;
+  left: 20%;
+  top: -300px;
 
   @media screen and (max-width: $breakpoint-tablet) {
     visibility: hidden;
@@ -31,6 +32,7 @@
   visibility: hidden;
   left: -300px;
   top: -300px;
+  width: max-content;
 
   @media screen and (max-width: $breakpoint-tablet) {
     visibility: visible;
@@ -48,5 +50,6 @@
     visibility: visible;
     top: -250px;
     right: -200px;
+    width: max-content;
   }
 }

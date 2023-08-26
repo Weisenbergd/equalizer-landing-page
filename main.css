@@ -268,8 +268,9 @@ article {
 }
 
 .background-desktop {
-  left: 15%;
-  top: -20%;
+  width: max-content;
+  left: 20%;
+  top: -300px;
 }
 @media screen and (max-width: 1370px) {
   .background-desktop {
@@ -281,6 +282,7 @@ article {
   visibility: hidden;
   left: -300px;
   top: -300px;
+  width: max-content;
 }
 @media screen and (max-width: 1370px) {
   .background-tablet {
@@ -301,6 +303,7 @@ article {
     visibility: visible;
     top: -250px;
     right: -200px;
+    width: max-content;
   }
 }
 
